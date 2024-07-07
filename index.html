@@ -12,118 +12,120 @@
     <title>Hi, i am Alvin</title>
 </head>
 <body>
-    <!-- head component -->
-    <header>
-        <div class="logo">
-            <img src="./img/logo-1.png" alt=""/>
-        </div>
-            <button id="navToggle" class="nav-toggle" aria-label="toggle navigator">
-                <span class="my-hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item" id="navLink-home"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item" id="navLink-services"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item" id="navLink-about"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item" id="navLink-work"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-    </header>
-    <!-- end of head component-->
-     
+    <div id="loading" class="__loading">
+        <img id="loading__img" class="loading__img" src="./img/loading-01.gif" alt="Loading..."/>
+        <!-- head component -->
+        <header>
+            <div class="logo">
+                <img src="./img/logo-1.png" alt=""/>
+            </div>
+                <button id="navToggle" class="nav-toggle" aria-label="toggle navigator">
+                    <span class="my-hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item" id="navLink-home"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item" id="navLink-services"><a href="#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item" id="navLink-about"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item" id="navLink-work"><a href="#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <!-- end of head component-->
+        
 
-     <!-- Introduction -->
-     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am <strong id="name" class="animate__animated animate__slideInLeft"> Alvin </strong>
-        </h1>
-        <p id="position" class="section__subtitle section__subtitle--intro">Web Dev. </p>
-        <img src="./img/profilealvin-1.png" alt="a picture of Alvin Poe Selisana" class="intro__img"/>
-    </section>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong id="name" class="animate__animated animate__slideInLeft"> Alvin </strong>
+            </h1>
+            <p id="position" class="section__subtitle section__subtitle--intro">Web Dev. </p>
+            <img src="./img/profilealvin-1.png" alt="a picture of Alvin Poe Selisana" class="intro__img"/>
+        </section>
 
-    <!-- end of Introduction -->
-    
-    <!-- Services -->
-    <section class="my-services" id="services">
-        <!-- <img id="servimg" class="__serviceimg" v-show="isshow" :src="serviceimg"/> -->
-          <h2 id="sectiontitle" @mouseover="clickServices" class="section__title section__title--services"><strong>What are my areas of specialization ?</strong></h2>
-          <div class="services">
-                <div class="service" style="z-index:3">
-                        <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Frontend Development</strong></h3>
-                        <p style="z-index:3;">I specialize in the comprehensive development, creation, and maintenance of websites. My expertise spans various facets of web technology, including web design, publishing, programming, and database management. Leveraging a robust skill set, I proficiently utilize VanillaJs, React, CSS3, HTML5, Sass, etc. to deliver responsive and engaging user interfaces.</p>
-                </div> <!--class=service-->
-                <div class="service" style="z-index:3">
-                    <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Backend Development</strong></h3>
-                    <p style="z-index:3;">As a backend developer, I specialize in designing and implementing Application Programming Interfaces (APIs) that facilitate seamless integration with third-party platforms. My expertise lies in leveraging PHP and Node.js with Socket.io to architect robust and scalable APIs. This enables efficient data exchange and interoperability, empowering applications to communicate effectively across diverse environments.</p>
-                </div> <!--class=service-->
-                <div class="service" style="z-index:3">
-                    <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Database Development</strong></h3>
-                    <p style="z-index:3;">As a database developer, I specialize in architecting and optimizing databases to support robust and scalable applications. My expertise spans the design, implementation, and maintenance of database systems that underpin critical business operations. Utilizing advanced SQL and NoSQL technologies, I ensure efficient data storage, retrieval, and management.
+        <!-- end of Introduction -->
+        
+        <!-- Services -->
+        <section class="my-services" id="services">
+            <!-- <img id="servimg" class="__serviceimg" v-show="isshow" :src="serviceimg"/> -->
+            <h2 id="sectiontitle" @mouseover="clickServices" class="section__title section__title--services"><strong>What are my areas of specialization ?</strong></h2>
+            <div class="services">
+                    <div class="service" style="z-index:3">
+                            <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Frontend Development</strong></h3>
+                            <p style="z-index:3;">I specialize in the comprehensive development, creation, and maintenance of websites. My expertise spans various facets of web technology, including web design, publishing, programming, and database management. Leveraging a robust skill set, I proficiently utilize VanillaJs, React, CSS3, HTML5, Sass, etc. to deliver responsive and engaging user interfaces.</p>
+                    </div> <!--class=service-->
+                    <div class="service" style="z-index:3">
+                        <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Backend Development</strong></h3>
+                        <p style="z-index:3;">As a backend developer, I specialize in designing and implementing Application Programming Interfaces (APIs) that facilitate seamless integration with third-party platforms. My expertise lies in leveraging PHP and Node.js with Socket.io to architect robust and scalable APIs. This enables efficient data exchange and interoperability, empowering applications to communicate effectively across diverse environments.</p>
+                    </div> <!--class=service-->
+                    <div class="service" style="z-index:3">
+                        <h3 style="z-index:3; background-color: var(--clr-accent); color: var(--clr-dark);"><strong>Database Development</strong></h3>
+                        <p style="z-index:3;">As a database developer, I specialize in architecting and optimizing databases to support robust and scalable applications. My expertise spans the design, implementation, and maintenance of database systems that underpin critical business operations. Utilizing advanced SQL and NoSQL technologies, I ensure efficient data storage, retrieval, and management.
 
-                </div> <!--class=service-->
-            </div><!--class=services-->
-          <a href="#work" class="button-3d btn-work">My Work</a>
-    </section>
-    <!-- end of Services -->
+                    </div> <!--class=service-->
+                </div><!--class=services-->
+            <a href="#work" class="button-3d btn-work">My Work</a>
+        </section>
+        <!-- end of Services -->
 
-    <!-- About Me-->
-    <section class="about-me" id="about">
-        <h2 id="aboutTitle" class="section__title section__title--about">Who I Am ?</h2>
-        <p class="section__subtitle section__subtitle--about">I am not the best but i do my best always</p>
-        <div class="about-me__body">
-            <p>I am Alvin, a dedicated IT professional driven by a passion for continuous learning and overcoming challenges. I maintain a steadfast commitment to expanding my knowledge base, recognizing that in the dynamic field of technology, ongoing evolution is essential. I approach every task with unwavering dedication, consistently striving for excellence and delivering optimal outcomes.
-               </p>
-               <p>In my journey as an IT professional, I embrace opportunities to enhance my skills and contribute meaningfully to organizational success. My proactive approach to staying current with industry trends ensures that I can adeptly navigate technological advancements and implement innovative solutions.
-            </p>
-          
-            <p>If there's anything specific you'd like to know or discuss further.
-                <a href="https://github.com/selisanaalvin/my.resume" class="button-3d"> Just poke me. </a>
-            </p>
-        </div>
+        <!-- About Me-->
+        <section class="about-me" id="about">
+            <h2 id="aboutTitle" class="section__title section__title--about">Who I Am ?</h2>
+            <p class="section__subtitle section__subtitle--about">I am not the best but i do my best always</p>
+            <div class="about-me__body">
+                <p>I am Alvin, a dedicated IT professional driven by a passion for continuous learning and overcoming challenges. I maintain a steadfast commitment to expanding my knowledge base, recognizing that in the dynamic field of technology, ongoing evolution is essential. I approach every task with unwavering dedication, consistently striving for excellence and delivering optimal outcomes.
+                </p>
+                <p>In my journey as an IT professional, I embrace opportunities to enhance my skills and contribute meaningfully to organizational success. My proactive approach to staying current with industry trends ensures that I can adeptly navigate technological advancements and implement innovative solutions.
+                </p>
+            
+                <p>If there's anything specific you'd like to know or discuss further.
+                    <a href="https://github.com/selisanaalvin/my.resume" class="button-3d"> Just poke me. </a>
+                </p>
+            </div>
 
-        <img id="profileabout" src="./img/profile-alvin-2.png" alt="Alvin love to learn" class="about-me__img"/>
-    </section>
-    <!-- end of About Me-->
+            <img id="profileabout" src="./img/profile-alvin-2.png" alt="Alvin love to learn" class="about-me__img"/>
+        </section>
+        <!-- end of About Me-->
 
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 id="projects" class="section__title section__title--work">My Work Experiences</h2>
-        <p class="section__subtitle section__subtitle--work">< Professional Journey and Achievements /></p>
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 id="projects" class="section__title section__title--work">My Work Experiences</h2>
+            <p class="section__subtitle section__subtitle--work">< Professional Journey and Achievements /></p>
 
-        <div class="portfolio">
-            <a class="portfolio__item">
-                <img src="./img/sbclogo.jpg" class="portfolio__img" alt="solutionBase Corp."/>
+            <div class="portfolio">
+                <a class="portfolio__item">
+                    <img src="./img/sbclogo.jpg" class="portfolio__img" alt="solutionBase Corp."/>
+                </a>
+                <a class="portfolio__item">
+                    <img src="./img/wtechlogo.jpg" class="portfolio__img" alt="Wtech Solutions "/>
+                </a>
+                <a class="portfolio__item">
+                    <img src="./img/accenture.png" class="portfolio__img" alt="Accenture"/>
+                </a>
+                <a class="portfolio__item">
+                    <img src="./img/collabera.png" class="portfolio__img" alt="Collabera"/>
+                </a>
+            </div>
+        </section>
+        <!-- end of My Work -->
+
+        <footer class="footer">
+            <a href="mailto: selisanaalvin@gmail.com" class="footer__link">
+                selisanaalvin@gmail.com
             </a>
-            <a class="portfolio__item">
-                <img src="./img/wtechlogo.jpg" class="portfolio__img" alt="Wtech Solutions "/>
-            </a>
-            <a class="portfolio__item">
-                <img src="./img/accenture.png" class="portfolio__img" alt="Accenture"/>
-            </a>
-            <a class="portfolio__item">
-                <img src="./img/collabera.png" class="portfolio__img" alt="Collabera"/>
-            </a>
-        </div>
-    </section>
-    <!-- end of My Work -->
+            <ul class="social-list">
+                <!--this must be another linke-->
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/alvin-selisana-358b981a2/"><i class="bi bi-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/selisanaalvin"><i class="bi bi-facebook"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/selisanaalvin"><i class="bi bi-github"></i></a></li>
+            </ul>
+        </footer>
 
-    <footer class="footer">
-        <a href="mailto: selisanaalvin@gmail.com" class="footer__link">
-            selisanaalvin@gmail.com
-        </a>
-        <ul class="social-list">
-            <!--this must be another linke-->
-            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/alvin-selisana-358b981a2/"><i class="bi bi-linkedin"></i></a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/selisanaalvin"><i class="bi bi-facebook"></i></a></li>
-            <li class="social-list__item"><a class="social-list__link" href="https://github.com/selisanaalvin"><i class="bi bi-github"></i></a></li>
-        </ul>
-    </footer>
-
-     <!-- Page scroller -->
-     <button id="pageScroller" class="page-scroller">
-        <i class="bi bi-arrow-up"></i>
-    </button>
-
+        <!-- Page scroller -->
+        <button id="pageScroller" class="page-scroller">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
     <script src="js/index-scripts.js"></script>
 </body>
 </html>

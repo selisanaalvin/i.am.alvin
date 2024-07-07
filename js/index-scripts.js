@@ -1,3 +1,27 @@
+let i = 0
+setInterval(() => {
+  const _loading = document.getElementById('loading')
+  const loadingimg = document.getElementById('loading__img')
+  if (document.readyState === 'loading') {
+    _loading.classList.add('__loading')
+    loadingimg.classList.add('loading__img')
+    loadingimg.classList.remove('hide')
+  }
+  if (document.readyState === 'interactive') {
+    _loading.classList.add('__loading')
+    loadingimg.classList.add('loading__img')
+    loadingimg.classList.remove('hide')
+  }
+  if (document.readyState === 'complete') {
+    if (i === 50) {
+      _loading.classList.remove('__loading')
+      loadingimg.classList.remove('loading__img')
+      loadingimg.classList.add('hide')
+    }
+    i++
+  }
+}, 100)
+
 // HEAD COMPONENTS
 document.getElementById('navToggle').addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
