@@ -547,3 +547,27 @@ header {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--clr-accent);
 }
+
+/* Optional: Styling for the page scroller */
+.page-scroller {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+    width: 50px; /* Adjust width and height for circular shape */
+    height: 50px;
+    background-color: #007bff; /* Button background color */
+    border-radius: 50%; /* Make it circular */
+    border: none; /* Optional: Remove default button border */
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+    color: white; /* Icon color */
+}
+
+.page-scroller i {
+    display: block;
+    font-size: 24px; /* Adjust icon size */
+    margin: auto; /* Center the icon vertically and horizontally */
+    line-height: 50px; /* Match the button height for vertical centering */
+}

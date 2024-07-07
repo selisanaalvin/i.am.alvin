@@ -77,3 +77,25 @@ projects.addEventListener('click', () => {
     projects.addEventListener('animationend', () => { projects.classList.remove('animate__animated', 'animate__jackInTheBox') })
 })
 
+
+
+// PAGE SCROLLER
+// Get the page scroller button
+const pageScroller = document.getElementById('pageScroller');
+
+// Show or hide the page scroller based on scroll position
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) { // Adjust the scroll threshold as needed
+        pageScroller.style.display = 'block';
+    } else {
+        pageScroller.style.display = 'none';
+    }
+});
+
+// Smooth scroll to the top when the button is clicked
+pageScroller.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
