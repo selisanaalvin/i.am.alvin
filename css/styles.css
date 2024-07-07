@@ -338,7 +338,7 @@ header {
 /* my services section */
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url('../assets/img/techbg-2.jpg');
+    background-image: url('../img/techbg-2.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
