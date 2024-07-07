@@ -65,6 +65,26 @@ position.addEventListener('click', () => {
 })
 
 // SERVICES
+
+document.addEventListener('DOMContentLoaded', function() {
+    const services = document.querySelectorAll('.service');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__pulse');
+                    observer.unobserve(entry.target); // Stop observing after animation is applied
+            }
+        });
+    }, {
+        threshold: 0.5 // Adjust this value as needed
+    });
+
+    services.forEach(service => {
+        observer.observe(service);
+    });
+});
+
 const sectiontitle = document.getElementById('sectiontitle')
 sectiontitle.addEventListener('mouseover', () => {
     sectiontitle.classList.add('animate__animated', 'animate__swing')
@@ -121,5 +141,25 @@ pageScroller.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
+    });
+});
+
+// TIMELINE
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.timeline-item');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__jackInTheBox');
+                observer.unobserve(entry.target); // Stop observing after animation is applied
+            }
+        });
+    }, {
+        threshold: 0.5 // Adjust this value as needed
+    });
+
+    items.forEach(item => {
+        observer.observe(item);
     });
 });
